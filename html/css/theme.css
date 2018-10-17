@@ -64,11 +64,13 @@ body {
     width: 100%;
     height: 100%;
     line-height: 24px;
-    color: #6a6a6a;
+    /*color: #6a6a6a;*/
     font-size: 13px;
     font-family: 'Open Sans', sans-serif;
     font-weight: normal;
     letter-spacing: 1px;
+    background-color: #181818;
+    color: #ffffff;
 }
 
 html {
@@ -1052,4 +1054,20 @@ h6 {
 }
 .copy p{
     font-weight: 600;
+}
+
+
+/*>>>>>>>>>>>>>> My New Added <<<<<<<<<<<<<<< */
+.flexslider#section-slider{
+    margin-top: 100px;
+    /*z-index: 1030;*/
+}
+.navbar-custom{
+    background-color: #181818;
+}
+.nav li,.nav li a{
+    color: #fff;
+}
+.nav li.active,.nav li a:hover{
+    color: #918354!important;
 }
