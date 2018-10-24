@@ -135,7 +135,7 @@ p {
     font-size: 14px;
     font-weight: 400;
     margin: 0px 0 10px 0;
-    color: #888;
+    color: #fff;
     letter-spacing: 1px;
 }
 .dark-bg {
@@ -173,7 +173,7 @@ ul,li{
 --------------------------------------------- */
 
 h1, h2, h3, h4, h5, h6 {
-    color: #323232;
+    color: #AB9D6B;
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
@@ -270,8 +270,8 @@ h6 {
 
 .btn-primary{
     border-color: #fff;
-    background: #fff;
-    color: #2A2A2A;
+    background: #918354;
+    color: #ffffff;
     -webkit-transition: all .3s ease 0s;
     -o-transition: all .3s ease 0s;
     transition: all .3s ease 0s;
@@ -384,8 +384,9 @@ h6 {
 }
 
 
-.navbar-custom .nav li.active a:hover {
-    font-weight: 700;
+.navbar-custom .nav li.active a:hover, .navbar-custom .nav li a:hover {
+    /*font-weight: 700;*/
+    letter-spacing: 2px;
 }
 
 
@@ -1059,15 +1060,22 @@ h6 {
 
 /*>>>>>>>>>>>>>> My New Added <<<<<<<<<<<<<<< */
 .flexslider#section-slider{
-    margin-top: 100px;
+    margin-top: 93px;
     /*z-index: 1030;*/
 }
 .navbar-custom{
-    background-color: #181818;
+    background-color: #252525;
+    border-bottom: 1px solid #918354;
 }
 .nav li,.nav li a{
     color: #fff;
 }
-.nav li.active,.nav li a:hover{
-    color: #918354!important;
+.nav li.active ,.nav li a:hover{
+    background-color: #918354!important;
+}
+/*Owl slider css*/
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
 }

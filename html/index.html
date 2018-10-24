@@ -44,9 +44,7 @@
 
 </head>
 
-<body class="navbar-custom" data-spy="scroll" data-target=".navbar-fixed-top">
-
-    
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">    
 
     <!-- >>>>>>> HEADER <<<<<<<< -->
     <!-- Navigation -->
@@ -56,9 +54,9 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     <i class="fa fa-bars"></i>
                 </button>
-                <!-- <a class="navbar-brand page-scroll" href="#page-top">
+                <a class="navbar-brand page-scroll" href="#page-top">
                     <i class="fa fa-bullseye "></i>adaline
-                </a> -->
+                </a>
             </div>
 
             
@@ -80,46 +78,29 @@
         <!-- /.container -->
     </nav>
     <!-- navbar end -->
-	<div class="flexslider" id="section-slider">
-		<ul class="slides">
-		    <li>
-		     	<img src="images/slider/slider-1.jpg" alt="slider-1 img" class="img-responsive">
-				<div class="flex-caption ">
-					<h4 class="wow slideInLeft">welcome to adaline</h4>
-					<p class="wow slideInRight">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque laborum iure sapiente ipsa quos mollitia libero quidem odio consequuntur maxime minima, ex, natus voluptatum doloribus, magni asperiores deserun.
-					<div class="btn-container wow fadeInUp">
-						<a href="#" class="btn btn-primary black">Discover us</a>
-						<a href="#" class="btn btn-primary ">Discover us</a>
-					</div>
-				</div>
-		    </li>
+     
+    <!-- Owl carousel -->
+    
+    <div id="owl-demo" class="owl-carousel owl-theme">       
+      <div class="item"><img src="images/owl/1.jpg" alt="The Last of us"></div>
+      <div class="item"><img src="images/owl/2.jpg" alt="GTA V"></div>
+      <div class="item"><img src="images/owl/3.jpg" alt="Mirror Edge"></div>
+    </div>
 
-		    <li>
-		      	<img src="images/slider/slider-2.jpg" alt="slider-2 img" class="img-responsive">
-			    <div class="flex-caption ">
-			    	<h4 class="wow slideInRight">We are innovative</h4>
-					<p class="wow slideInLeft">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque laborum iure sapiente ipsa quos mollitia libero quidem odio consequuntur maxime minima, ex, natus voluptatum doloribus, magni asperiores deserun.
-					<div class="btn-container wow fadeInUp">
-						<a href="#" class="btn btn-primary black">Discover us</a>
-						<a href="#" class="btn btn-primary ">Discover us</a>
-					</div>
-			    </div>
-		    </li>
+    <!-- <div class="owl-two owl-carousel owl-theme">
+        <div class="item" style="width:250px; height: 200px; background-color: blue"></div>
+        <div class="item" style="width:250px; height: 200px; background-color: blue"></div>
+        <div class="item" style="width:250px; height: 200px; background-color: blue"></div>
+    </div>
 
-		    <li>
-		     	<img src="images/slider/slider-3.jpg" alt="slider-3 img" class="img-responsive">
-			    <div class="flex-caption ">
-			     	<h4 class="wow slideInLeft">We are creative</h4>
-					<p class="wow slideInRight">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque laborum iure sapiente ipsa quos mollitia libero quidem odio consequuntur maxime minima, ex, natus voluptatum doloribus, magni asperiores deserun.
-					<div class="btn-container wow fadeInUp">
-						<a href="#" class="btn btn-primary black">Discover us</a>
-						<a href="#" class="btn btn-primary ">Discover us</a>
-					</div>
-			    </div>
-		    </li>
-		</ul>
-	</div>
-        
+    <div class="owl-three owl-carousel owl-theme">
+        <div class="item" style="width:250px; height: 200px; background-color: red"></div>
+        <div class="item" style="width:250px; height: 200px; background-color: red"></div>
+        <div class="item" style="width:250px; height: 200px; background-color: red"></div>
+    </div> -->
+
+
+
     <!-- section about strat -->
 
     <section id="section-about" class="section-padding ">
@@ -872,12 +853,12 @@
                     </div> <!-- item end -->
 
                 </div>
-                <!-- Indicators -->
+                <!-- carousel-inner -->
                 <ol class="carousel-indicators">
                     <li data-target="#feature-carousel" data-slide-to="0" class="active"></li>
                     <li data-target="#feature-carousel" data-slide-to="1"></li>
                 </ol>
-            </div><!-- row end -->
+            </div><!-- feature-carousel -->
         </div><!--container end -->
     </section>
     <!-- section features ens -->
@@ -1005,7 +986,7 @@
     <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
         <!-- Wow Animation -->
     <script type="text/javascript" src="js/wow.min.js"></script>
-
+    <script type="text/javascript" src="js/owl.js"></script>
     <!-- Custom Theme JavaScript -->
     <script src="js/theme.js"></script>
 
