@@ -67,7 +67,7 @@ $('.navbar-collapse ul li a').click(function() {
           items: 1,
           loop: true,
           margin: 10,
-          nav: true
+          // nav: true
         });
         
         owl.on('translate.owl.carousel', function(event) {

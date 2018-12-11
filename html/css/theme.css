@@ -1,10 +1,10 @@
 
 /*
-    Template Name: Adaline-Multipurpose landing template
-    Author: Themeturn
-    Author URI: http://themeforest.net/user/ThemeTurn
+    Template Name: Newyourk Multipurpose One Page Template
+    Author: Rubel
+    Author URI: 
     Description: 
-    Version: 1.0
+    Version: 1.1.0
 */
 
 /* Table of Content
@@ -32,11 +32,12 @@
 
 /* 1 - Google Font
 ------------------------------------------------------------------------*/
-@import url(http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900);
+/*@import url(http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900);*/
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300);
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300);*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Playfair+Display');
 
-@font-face {
+/*@font-face {
     font-family: 'ElegantIcons';
     src:url('fonts/ElegantIcons.eot');
     src:url('fonts/ElegantIcons.eot?#iefix') format('embedded-opentype'),
@@ -46,7 +47,7 @@
     font-weight: normal;
     font-style: normal;
 }
-
+*/
 /* 2 - General styles
 ------------------------------------------------------------------------*/
 :-moz-selection {
@@ -174,8 +175,9 @@ ul,li{
 
 h1, h2, h3, h4, h5, h6 {
     color: #AB9D6B;
+    /*color: #fff;*/
     text-transform: uppercase;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-weight: 600;
     margin-top: 0px;
     margin-bottom: 10px;
@@ -329,8 +331,8 @@ h6 {
     margin: 0px auto 30px;
 }
 .section-heading hr{
-    width: 7%;
-    border-color: #ddd;
+    width: 15%;
+    border-color: #918354;
 }
 
 
@@ -748,7 +750,7 @@ input,textarea{
 }
 
 .section-heading.light h2{
-    color: #fff;
+    /*color: #fff;*/
 }
 .section-heading.light p{
     color: #eee;
@@ -882,6 +884,9 @@ input,textarea{
 /*=====================================================
     SECTION TESTIMONIAL
 ==========================================================*/
+#testimonial-carousel .item p{
+    float: left;;
+}
 #section-testimonial{
     padding-top: 80px;
     padding-bottom: 80px;
@@ -900,7 +905,7 @@ input,textarea{
 }
 #testimonial-carousel{}
 #testimonial-carousel .item p{
-    width: 70%;
+    /*width: 70%;*/
     margin: 0 auto;
     text-align: center;
 }
@@ -918,11 +923,11 @@ input,textarea{
 #testimonial-carousel .item{}
 
 #testimonial-carousel .carousel-indicators {
-    right: 50%;
+    /*right: 50%;
     top: 35%;
     bottom: 0px;
     margin-right: -19px;
-    margin-top: 120px;
+    margin-top: 120px;*/
 }
 #testimonial-carousel .carousel-indicators li {
     width: 50px;
@@ -1048,7 +1053,7 @@ input,textarea{
 } 
 .info-box .info-desc p{
     font-weight: 500;
-    color: #fff;
+    color: #918354;
     margin-top: 0px;
 }
 
@@ -1080,9 +1085,9 @@ input,textarea{
     font-size: 14px;
 }
 .footer-socail li a:hover{
-    background: #fff;
-    color: #2A2A2A;
-    border-color: #fff;
+    background: #918354;
+    color: #fff;
+    border-color: #918354;
 }
 .copy p{
     font-weight: 600;
@@ -1330,10 +1335,13 @@ section {
 }
 
 .price .grey {
-    background-color: #eee;
+    background-color: #ffffff;
     font-size: 20px;
 }
-
+.price .grey a{
+    color: #927925;
+    font-weight: bold;
+}
 .button {
     background-color: #4CAF50;
     border: none;
@@ -1343,8 +1351,8 @@ section {
     text-decoration: none;
     font-size: 18px;
 }
-.price-color{
-    color: black;
+.price-color{    
+    color: #927925;
 }
 @media only screen and (max-width: 600px) {
     .columns {
@@ -1365,7 +1373,8 @@ section {
     margin-top: 25%;
 }*/
 .owl-slide-subtitle{
-    color: black;
+    /*color: black;*/
+    color: #fff;
 }
 .owl-carousel .owl-dots .owl-dot.active span {    
     background: #918354;
@@ -1449,4 +1458,258 @@ section {
   0%, 25% { opacity: .5; transform: translateZ(-500px) translateX(200%); }
   75% { opacity: .5; transform: translateZ(-500px); }
   100% { opacity: 1; transform: translateZ(0) translateX(0); }
+}
+
+
+
+
+
+/*>>>>>>>>>>>>>> SERVICE STYELS BOXED <<<<<<<<<<<<<<<<< */
+.text{
+    color: white;
+    text-align: center;
+}
+
+
+.folded-corner:hover .text{
+    visibility: visible;
+    color: #000000;;
+}
+.Services-tab{
+    margin-top:20px;
+    
+
+}
+
+/*
+  nav link items
+*/
+.folded-corner{
+  padding: 25px 25px;
+  position: relative;
+  font-size: 90%;
+  text-decoration: none;
+  color: #999; 
+  background: transparent;
+  transition: all ease .5s;
+  border: 1px solid #918354;
+}
+.folded-corner:hover{
+    background-color: white;
+}
+
+/*
+  paper fold corner
+*/
+
+.folded-corner:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-style: solid;
+  border-width: 0 0px 0px 0;
+  border-color: #ddd #000;
+  transition: all ease .3s;
+}
+
+/*
+  on li hover make paper fold larger
+*/
+.folded-corner:hover:before {
+    background-color: #D00003;
+  border-width: 0 50px 50px 0;
+  border-color: #eee #000;
+  
+}
+
+.service_tab_1{
+    background-color: #252525;
+}
+.service_tab_1:hover .fa-icon-image{
+    color: #E8EAED;
+    transform: rotate(360deg) scale(1.5);
+}
+
+
+.fa-icon-image{
+    color: white;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    font-size-adjust: none;
+    font-stretch: normal;
+    -moz-font-feature-settings: normal;
+    -moz-font-language-override: normal;
+    text-rendering: auto;
+    transition: all .65s linear 0s;
+    text-align: center;
+    transition: all 1s cubic-bezier(.99,.82,.11,1.41);
+}
+
+/*>>>>>>>>>>>>>>>>> Input field animation STYLE CODE <<<<<<<<<<<<<<<<<<<<<<*/
+
+/**
+* Add a transition to the label and input.
+* I'm not even sure that touch-action: manipulation works on
+* inputs, but hey, it's new and cool and could remove the 
+* pesky delay.
+*/
+/*label, input {
+  transition: all 0.2s;
+  touch-action: manipulation;
+}
+
+input {
+  font-size: 1.5em;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  font-family: inherit;
+  -webkit-appearance: none;
+  border-radius: 0;
+  padding: 0;
+  cursor: text;
+}
+*/
+/*input:focus {
+  outline: 0;
+  border-bottom: 1px solid #666;
+}
+
+label {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}*/
+/**
+* Translate down and scale the label up to cover the placeholder,
+* when following an input (with placeholder-shown support).
+* Also make sure the label is only on one row, at max 2/3rds of the
+* field—to make sure it scales properly and doesn't wrap.
+*/
+/*input:placeholder-shown + label {
+  cursor: text;
+  max-width: 66.66%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transform-origin: left bottom;
+  transform: translate(0, 2.125rem) scale(1.5);
+}*/
+/**
+* By default, the placeholder should be transparent. Also, it should 
+* inherit the transition.
+*/
+/*::-webkit-input-placeholder {
+  opacity: 0;
+  transition: inherit;
+}*/
+/**
+* Show the placeholder when the input is focused.
+*/
+/*input:focus::-webkit-input-placeholder {
+  opacity: 1;
+}*/
+/**
+* When the element is focused, remove the label transform.
+* Also, do this when the placeholder is _not_ shown, i.e. when 
+* there's something in the input at all.
+*/
+/*input:not(:placeholder-shown) + label,
+input:focus + label {
+  transform: translate(0, 0) scale(1);
+  cursor: pointer;
+}*/
+
+.testimonial blockquote {
+    font-size: 60px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 70px;
+    padding-bottom: 70px;
+}
+.quote-center{
+    text-align: center;
+}
+.carousel-indicators{
+    bottom: auto;
+}
+hr,img{
+    border-top: 1px solid #918354;
+    border: 1px solid #918354;
+}
+.author_name{
+    float: right;
+    margin-right: 109px;
+    color: #797777;
+}
+#testimonial-carousel img{
+    border-radius: 50%;
+    border:transparent;
+}
+
+/* >>>>>>>>>>>>>> Why Choose Us Area CSS <<<<<<<<<<<< */
+    .single_choose_us {
+        margin-bottom: 30px;
+        padding-right: 85px;
+        position: relative;
+        text-align: right;
+        -webkit-transition-duration: 500ms;
+        transition-duration: 500ms;
+    }
+    
+    .single_choose_us > h4 {
+        color: #918354;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    
+    .choose_us_icon {
+        background-color: #34495e;
+        border-radius: 50%;
+        color: #fff;
+        height: 70px;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        top: 2px;
+        width: 70px;
+        -webkit-transition-duration: 500ms;
+        transition-duration: 500ms;
+    }
+    
+    .choose_us_icon > i {
+        font-size: 30px;
+        line-height: 70px;
+    }
+    
+    .single_choose_us:hover .choose_us_icon {
+        background-color: #3ABDC1;
+    }
+    
+    .why_choose_us_text_area.second_area .single_choose_us {
+        padding-right: 0;
+        padding-left: 85px;
+    }
+    
+    .why_choose_us_text_area.second_area .choose_us_icon {
+        right: auto;
+        left: 0;
+        top: 2px;
+    }
+    
+    .why_choose_us_text_area.second_area .single_choose_us {
+        text-align: left;
+    }
+    
+    .why_choose_us_image {
+        padding-top: 15px;
+    }
+    .section_heading {
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
 }
