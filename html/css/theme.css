@@ -1107,7 +1107,10 @@ input,textarea{
     color: #fff;
 }
 .nav li.active ,.nav li a:hover{
-    background-color: #918354!important;
+    /*background-color: #918354!important;*/
+}
+.nav li.active a, .nav li a:hover{
+	color: #918354!important;	
 }
 /*Owl slider css*/
 .cover {
