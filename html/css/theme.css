@@ -1722,3 +1722,6 @@ hr,img{
 .carousel-indicators .active{
 	background-color: transparent;
 }
+.carousel-inner>.item>img{
+	border: transparent;
+}

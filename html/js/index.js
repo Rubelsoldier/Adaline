@@ -28,7 +28,7 @@ var $owlCarousel = $("#section-slider").owlCarousel({
   '<svg width="50" height="50" viewBox="0 0 24 24"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>' /* icons from https://iconmonstr.com */] });
 
 
-$owlCarousel.on("changed.owl.carousel", function (e) {  
+$owlCarousel.on("changed.owl.carousel", function (e) {
   $(".owl-slide-animated").removeClass("is-transitioned");
 
   var $currentOwlItem = $(".owl-item").eq(e.item.index);
@@ -58,7 +58,7 @@ function doDotsCalculations(el) {
   var height = el.height();var _el$position =
   el.position(),top = _el$position.top,left = _el$position.left;
   var res = height + top + 20;  
-  $(".owl-carousel .owl-dots").css({
+  $("#section-slider.owl-carousel .owl-dots").css({
     top: res + "px",
     left: left + "px" });
 
